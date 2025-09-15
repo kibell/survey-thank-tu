@@ -15,15 +15,121 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.accordion-button {
+  font-family: Inter;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+letter-spacing: 0%;
 
+}
 
+.survey-accordion .accordion-button {
+  background-color: transparent;
+  border: none !important;
+  box-shadow: none !important;
+}
 
+img.front-img  {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    width: 65%;
+        border-radius: 0rem 2rem 12rem 1rem;
+    box-shadow: 4px 9px 15px rgba(0, 0, 0, 0.55);
+}
 
+.vidyard-player-container-survey {
+   position: absolute;
+    top: 6rem;
+    left: 2rem;
+    width: 90%;
+    height: 16rem;
+    border-radius: 2rem 2rem 3rem 0rem;
+    box-shadow: 4px 9px 15px rgba(0, 0, 0, 0.55);
+
+}
+
+.abby-container > .vidyard-player-container{
+  border-radius: 20px;
+  box-shadow: 4px 9px 15px rgba(0, 0, 0, 0.55);
+  height: 12rem !important;
+}
+
+.back-img {
+  width: 65%;
+}
+
+.accordion-item {
+  border: none !important;
+  border-color: transparent !important;
+}
+
+.info-text {
+  max-width: 70%
+}
   
   
-  
- 
-  
-  
- 
+#countdown-headline {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+#countdown-headline p {
+  font-size: 1.2rem;
+  color: #fdb913;
+}
+
+#countdown ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+
+#countdown li {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  list-style-type: none;
+  padding: 1.2rem;
+}
+
+#countdown li span {
+  display: block;
+  font-size: 1.25rem;
+}
+
+#days, #hours, #minutes, #seconds {
+  color: #fdb913;
+}
+
+@media only screen and (max-width: 992px) {
+  .countdown-wrapper {
+    flex-direction: column;
+  }
+  #countdown li {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    list-style-type: none;
+    padding: 0.5rem;
+  }
+  #days, #hours, #minutes, #seconds, #countdown li {
+    font-size: 1rem;
+  }
+}
+#welcome {
+  background-image: url(https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/4903ad99-88ac-45f4-957f-80a2905f97d8.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+  /* Abby styles */
+    
   

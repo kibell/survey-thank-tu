@@ -20,6 +20,17 @@
   }
 }
 
+.btn-default {
+  background-color: #fff;
+  border-color: black;
+  color: black;
+
+  &:hover {
+  background-color: #fff;
+  border-color: black;
+  color: black;
+  }
+}
 
 .btn-secondary {
   background-color: $heritage;

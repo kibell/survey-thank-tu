@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
- <!-- First Name Amp 
+<!-- First Name Amp 
   %%[
   var @contact 
   set @contact = QueryParameter('SFID')
@@ -33,6 +33,7 @@ Set @firstnamecombo = @firstname
 ENDIF
   ]%%
 -->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,9 +50,11 @@ ENDIF
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://www.snhu.edu/assets/SNHU/images/common/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="https://www.snhu.edu/assets/SNHU/images/common/favicon.ico" type="image/x-icon" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="https://www.snhu.edu/assets/SNHU/images/common/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://www.snhu.edu/assets/SNHU/images/common/favicon.ico" type="image/x-icon" />
   <link
     href="https://snhu.tfaforms.net/dist/form-builder/5.0.0/wforms-layout.css?v=dc32c8645b2385d544026180d37a5a70eef875e5"
     rel="stylesheet" type="text/css" />
@@ -92,26 +95,26 @@ ENDIF
 
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NXPNK9L4W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NXPNK9L4W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-4NXPNK9L4W');
-</script>
+    gtag('config', 'G-4NXPNK9L4W');
+  </script>
 
-<!-- Hotjar Tracking Code for SNHU Properties -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:2360018,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+  <!-- Hotjar Tracking Code for SNHU Properties -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 2360018, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
       a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 
 </head>
 
@@ -121,13 +124,37 @@ ENDIF
   <!-- Header + Nav -->
 
   <header>
-    <nav class="navbar navbar-expand-lg p-3">
+   <nav class="navbar navbar-expand-lg p-3">
       <div class="container">
         <a class="navbar-brand" href="https://www.snhu.edu/">
-          <img
-            src="https://client-data.knak.io/production/email_assets/5fd10b569d941/Y9PaAR4BN1uvwQSeUR37Jtdwa2YUrN1By1RZIsk8.png"
-            alt="SNHU Logo" height="80">
+          <img src="https://client-data.knak.io/production/email_assets/5fd10b569d941/Y9PaAR4BN1uvwQSeUR37Jtdwa2YUrN1By1RZIsk8.png" alt="SNHU Logo" height="80">
         </a>
+
+        <div class="d-flex  align-items-center mt-3 countdown-wrapper">
+
+          <div id="countdown-headline" style="color: #fff;">You’re registered!
+            <p class="" style="color: #fff;">Next term starts September 1</p>
+          </div>
+
+
+          <div id="countdown">
+            <span id="nextTermStartDate" class="d-none"> 9/1/2025 12:00:00 AM </span>
+            <ul>
+              <li>
+                <span id="days">26</span>Days
+              </li>
+              <li>
+                <span id="hours">9</span>Hours
+              </li>
+              <li>
+                <span id="minutes">57</span>Minutes
+              </li>
+              <li>
+                <span id="seconds">56</span>Seconds
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class=" justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a href="Tel:8883870861" class="nav-link head-link mx-3 " target="_blank">Call</a>
@@ -140,51 +167,975 @@ ENDIF
     </nav>
   </header>
 
-  <!---Meet the New SNHU Term Names-->
 
-  <div class="meet-div text-center d-flex justify-content-center align-items-center">
-  </div>
+  <section class="py-5" style="height:38rem; overflow:hidden; position:relative;">
+    <!-- Right-side image only -->
+    <img src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/ed8eebf9-fb52-4edf-8354-67e2823bf0f4.png"
+      style="position:absolute; top:0; right:0; height:100%; border-radius:0 0 0 7rem; width: 60%;" />
 
-  <!--Accreditation-->
-
-  <div role="region" aria-label="Accreditations" class="container-fluid align-items-center text-center py-5 bg-light accreditation">
-    <img class="col-10 col-xxl-6"
-      src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/da987c7f-9fd4-420f-a9ac-3b64535744f8.png"
-      alt="SNHU accreditation logos" width="100%" height="auto">
-  </div>
-
-   <!--Footer-->
-
-   <footer class="py-5">
-    <div class="container-fluid">
+    <div class="container position-relative">
       <div class="row">
-        <div class="col-md-4 d-flex justify-content-center align-items-center">
-          <p class="" style="color:#fff"> <strong>SNHU Admission</strong><br>
-            55 S. Commercial Street
-            <br> Manchester, NH 03106
-            <br>
-            <a href="Tel:8883870864" class="text-link">888.387.0864</a>
-            <br>
-            <a href="mailto:admissions@snhu.edu" class="text-link primary-link"> admissions@snhu.edu </a>
+        <div class="col-md-6 p-5 welcome-section" style="border-radius: 0 30px; background-color:#2066A2; color:#fff;">
+          <h1 style="font-size: 48px; color:#fff;">Dear Tiffany:<br>
+            <span style="font-size: 40px; color:#fff;">You belong here. And we believe in you.</span>
+          </h1>
+          <h3 style="color:#fff;">Thank you for letting us know how you’re feeling!</h3>
+          <p style="color:#fff;">Your admission counselor will receive your answers and reach out to you with help and
+            info if you’re not feeling confident on anything. You can also call or text your admission counselor
+            directly at 888.387.0861.</p>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="col-md-4 d-flex justify-content-center align-items-center my-3">
-          <a href="https://www.snhu.edu/" target="_blank"
-          class="link-dark text-decoration-none">
-          <img
-            src="https://client-data.knak.io/production/email_assets/5fd10b569d941/Y9PaAR4BN1uvwQSeUR37Jtdwa2YUrN1By1RZIsk8.png"
-            height="80" alt="SNHU logo">
-        </a>
+  <section class="py-5 my-5">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center">In the meantime, here are some how-to videos and resource links sorted by survey
+          subject.</h2>
+
+        <div class="col-md-12 mt-5">
+          <div class="accordion survey-accordion" id="resourceAccordion">
+
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item">
+              <h2 class="" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  How are you feeling about your current access to a laptop and the internet?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#resourceAccordion">
+                <div class="accordion-body row">
+                  <div class="col-md-6">
+                    <div class="img-container position-relative" style="height: 28rem;">
+                      <img class="back-img"
+                        src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/69276ba0-7a56-4188-a0a6-af2c9c7dbd87.png"
+                        alt="Rectangle"  height="auto" />
+                      <img class="front-img"
+                        src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/34f959d6-b747-438c-a87c-5d2eed7db138.png"
+                        alt="Laptop"  height="auto">
+                    </div>
+                    <div class="mt-3 info-text">
+                    <h5 class="mt-3">What kind of computer do I need to be an online SNHU student?</h5>
+                    <p>You’ll need to make sure you have access to a computer and the internet before the start of your first term.</p>
+                    <a href="https://www.snhu.edu" target="_blank" class="btn btn-primary">See more information.</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                   <div class="mb-3"> What you’ll need:</div>
+                    <ul>
+                      <li><strong>Laptop or desktop:</strong> Windows 11 Home or Pro or comparable Apple Operating system. See minimum required specs.</li>
+                      <li><strong>Internet access:</strong> We recommend 15 hours per week per class.</li>
+                      <li><strong>Anti-virus software:</strong> Your internet service provider may include this with your subscription.</li>
+                    </ul>
+                    <div class="mb-3">Who to call for help
+                      <br>
+                    <a href="tel:8883870864" class="btn btn-default mt-3">Admission at 888.387.0864</a>
+                    </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Accordion Item 2 -->
+            <div class="accordion-item">
+              <h2 class="" id="headingTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                  aria-expanded="true" aria-controls="collapseTwo">
+                  How are you feeling about obtaining and accessing your books, e-books and course materials?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
+                data-bs-parent="#resourceAccordion">
+                <div class="accordion-body row">
+                  <div class="col-md-5">
+                    <div class="img-container position-relative" style="height: 24rem;">
+                      <img class="back-img"
+                        src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/69276ba0-7a56-4188-a0a6-af2c9c7dbd87.png"
+                        alt="Rectangle"  height="auto" />
+<iframe class="vidyard_iframe vidyard-player-container-survey " title="How to create your single sign-on password" src="//play.vidyard.com/ztt6T1BwZLg632fyJwzpER.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                    <div class="mt-3 info-text">
+  <h5 class="mt-3">How do I buy my books? </h5>
+                    <p>In most course, you’re going to have need to purchase books, e-books or other courses. This video shows you how.</p>
+                    <a href="https://www.snhu.edu" target="_blank" class="btn btn-primary">See more Book-Related Videos.</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-7">
+                    <ul>
+                     <li>In an online class, course materials often replace physical textbooks  </li> 
+<li>Most of the time, your materials will be e-books you read on your laptop</li>
+<li>Most of the time your e-books will be listed in each course syllabus in Brightspace</li>
+<li>Sometimes, course materials will be listed in class announcements or in weekly modules</li>
+<li>Most e-books can be purchased at the SNHU Online Bookstore</li>
+<li>By entering your SNHU ID# in the Get Started section of the bookstore, you can see a list of all the e-books you need to purchase for the term</li>
+<li>If you have questions about using financial aid book vouchers for your e-books, call SNHU financial services at 877.455.7648 with any questions about using them</li>
+<li>You should purchase your e-books and other listed materials BEFORE the term begins</li>
+                    </ul>
+                    <div class="mb-3">Who to call for help
+                      <br>
+                    <a href="tel:8883870864" class="btn btn-default mt-3">Admission at 888.387.0864</a>
+                    <a href="tel:8774557648" class="btn btn-default mt-3">Student Financial Services at 877.455.7648</a>
+                    </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Accordion Item 3 -->
+            <div class="accordion-item">
+              <h2 class="" id="headingThree">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                  aria-expanded="true" aria-controls="collapseThree">
+                 How do you feel about your ability to find and complete your assignments?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree"
+                data-bs-parent="#resourceAccordion">
+                <div class="accordion-body row">
+                  <div class="col-md-5">
+                    <div class="img-container position-relative" style="height: 24rem;">
+                      <img class="back-img"
+                        src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/69276ba0-7a56-4188-a0a6-af2c9c7dbd87.png"
+                        alt="Rectangle"  height="auto" />
+                        <iframe class="vidyard_iframe vidyard-player-container-survey " title="Welcome to the SNHU Learning Environment" src="//play.vidyard.com/Ytj27d32UPzk1iuhnzG3jP.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="mt-3 info-text">
+               <h5 class="mt-3">How to preview your courses in Brightspace </h5>
+                    <p>Brightspace is the learning platform where all your coursework happens — and it’s available to you 24/7 wherever you have an internet connection</p>
+                    <a href="https://www.snhu.edu" target="_blank" class="btn btn-primary">See More Brightspace and Assignment Videos.</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-7">
+                    <ul>
+                   <li>Log in to my.SNHU.edu </li>
+                   <li>Select “Brightspace” from the upper right navigation bar </li>
+                   <li>In Brightspace, select a course from the My Courses tab</li>
+                   <li>Select a weekly Learning Module from the course dropdown menu</li>
+                   <li>View learning materials and complete assignments listed in that section   </li>
+                    </ul>
+                    <div class="mb-3">Who to call for help
+                      <br>
+                      <a href="tel:8883870864" class="btn btn-default mt-3">Admission at 888.387.0864</a>
+                    </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+               <!-- Accordion Item 4 -->
+            <div class="accordion-item">
+              <h2 class="" id="headingFour">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                  aria-expanded="true" aria-controls="collapseFour">
+                 How confident are you about knowing how to contact your SNHU advisor, faculty, tutors, mental health counselors, academic accommodations center?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour"
+                data-bs-parent="#resourceAccordion">
+                <div class="accordion-body row">
+                  <div class="col-md-5">
+                    <div class="img-container position-relative" style="height: 24rem;">
+                      <img class="back-img"
+                        src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/69276ba0-7a56-4188-a0a6-af2c9c7dbd87.png"
+                        alt="Rectangle"  height="auto" />
+                       <iframe class="vidyard_iframe vidyard-player-container-survey " title=" Free Tutoring and Homework Help at SNHU" src="//play.vidyard.com/1qRCDX4tazQmkzaHTBGca5.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="mt-3 info-text">
+                 <h5 class="mt-3">How to get free 24/7 tutoring and homework help </h5>
+                    <p>Students who use free tutoring and support at SNHU tend to have better success rates. Access Academic Support from within any course in Brightspace.</p>
+                    <a href="https://www.snhu.edu" target="_blank" class="btn btn-primary">See More Tutoring and Support Team Videos</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-7">
+                    <ul>
+                  <li>Your dedicated advisor is your go-to person for most academic or other issues</li>
+                  <li>Free 24/7 tutoring is available via our Academic Support page in Brightspace (or within any course)</li>
+                  <li>Free 24/7 counseling is available via our Health and Wellness Resource page</li>
+                  <li>Our Online Accessibility Center (OAC) is ready to support students with documented disabilities or diagnoses</li>
+                    </ul>
+                    <div class="mb-3">Who to call for help
+                      <br>
+                      <a href="tel:8775914723" class="btn btn-default mt-3">Your student advisor at 877.591.4723</a>
+                    </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+                <!-- Accordion Item 5 -->
+            <div class="accordion-item">
+              <h2 class="" id="headingFive">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                  aria-expanded="true" aria-controls="collapseFive">
+                 How are you feeling about knowing how much time you’ll need to spend on your coursework each week and when you’ll study?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive"
+                data-bs-parent="#resourceAccordion">
+                <div class="accordion-body row">
+                  <div class="col-md-5">
+                    <div class="img-container position-relative" style="height: 24rem;">
+                      <img class="back-img"
+                        src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/69276ba0-7a56-4188-a0a6-af2c9c7dbd87.png"
+                        alt="Rectangle"  height="auto" />
+                       <iframe class="vidyard_iframe vidyard-player-container-survey " title="How to Get Good Grades at SNHU? (The Answer is in the Rubric)" src="//play.vidyard.com/7h6p6NTg6AWkSnUrjmbx8P.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="mt-3 info-text">
+                      <h5 class="mt-3">Our #1 tip for success: Map out your week </h5>
+                      <p>Trust us. Mapping out your week help you to balance school, work and life.</p>
+                      <a href="https://www.snhu.edu" target="_blank" class="btn btn-primary">See More Tutoring and Support Team Videos</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-7">
+                    <ul>
+                  <li>Plan on spending 15 hours per week per course on your studies (can vary by course)</li>
+                  <li>No set class times means you can pick the best times and days to study</li>
+                  <li>Weekly assignments on Thursdays and Sundays will keep you on track</li>
+                    </ul>
+                    <div class="mb-3">Who to call for help
+                      <br>
+                      <a href="tel:8775914723" class="btn btn-default mt-3">Your student advisor at 877.591.4723</a>
+                    </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+   <!-- Accordion Item 6 -->
+            <div class="accordion-item">
+              <h2 class="" id="headingSix">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                  aria-expanded="true" aria-controls="collapseSix">
+                 How do you feel about your understanding of your financial aid or tuition bill
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse " aria-labelledby="headingSix"
+                data-bs-parent="#resourceAccordion">
+                <div class="accordion-body row">
+                  <div class="col-md-5">
+                    <div class="img-container position-relative" style="height: 24rem;">
+                      <img class="back-img"
+                        src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/69276ba0-7a56-4188-a0a6-af2c9c7dbd87.png"
+                        alt="Rectangle"  height="auto" />
+                       <img class="front-img"
+                        src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/7a8ac469-2dbb-466a-a3ac-c273ba55311b.png"
+                        alt="Woman Smiling"  height="auto">
+                    </div>
+                    <div class="mt-3 info-text">
+                      <h5 class="mt-3">Connect with a Student Finance Counselor </h5>
+                      <p>We’re here for you to answer any questions you may have about your financial aid or your tuition bill.</p>
+                      <a href="tel:8774557648" target="_blank" class="btn btn-primary">Call Student Finance 877.455.7648</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-7">
+                    <ul>
+                      <li>SNHU Student finance services (SFS) is here to answer questions about your tuition bill, financial aid</li>
+                      <li>Finance counselors can also answer questions about the Free Application for Federal Student Aid (FAFSA)</li>
+                    </ul>
+                    <div class="mb-3">Who to call for help
+                      <br>
+                      <a href="tel:8774557648" class="btn btn-default mt-3">Your student advisor at 877.455.7648</a>
+                      <a href="tel:8775914723" class="btn btn-default mt-3">Schedule a call with SFS</a>
+                    </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+               
+
+              
+   <!-- Accordion Item 7 -->
+            <div class="accordion-item">
+              <h2 class="" id="headingSeven">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                  aria-expanded="true" aria-controls="collapseSeven">
+                 How much do you feel a sense of belonging at SNHU?
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse " aria-labelledby="headingSeven"
+                data-bs-parent="#resourceAccordion">
+                <div class="accordion-body row">
+                  <div class="col-md-5">
+                    <div class="img-container position-relative" style="height: 24rem;">
+                      <img class="back-img"
+                        src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/69276ba0-7a56-4188-a0a6-af2c9c7dbd87.png"
+                        alt="Rectangle"  height="auto" />
+                       <img class="front-img"
+                        src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/7a8ac469-2dbb-466a-a3ac-c273ba55311b.png"
+                        alt="Woman Smiling"  height="auto">
+                    </div>
+                    <div class="mt-3 info-text">
+                      <h5 class="mt-3">The right school makes all the difference </h5>
+                      <p>Hear SNHU graduates just like you who’ve reached their goals at Southern New Hampshire University.</p>
+                      <a href="tel:8774557648" target="_blank" class="btn btn-primary">See More Hype-Me-Up Student Videos</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-7">
+                    <ul>
+                      <li>If there’s one thing that sets SNHU apart it’s our commitment to individual student support</li>
+                      <li>Right now, more than 200,000 students in every U.S. state are earning their degrees at SNHU</li>
+                      <li>Whether you’ve tried school before or this is your first time, we’re going to be with you every step</li>
+                    </ul>
+                    <div class="mb-3">Questions? Call
+                      <br>
+                      <a href="tel:8883870864" class="btn btn-default mt-3">Admission 888.387.0864</a>
+                    </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+               
+
+              <!---Accordion End-->
+            </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container-fluid bg-light p-5 abby-section">
+        <div class="row align-items-center">
+          <h2 class="text-center">Step-by-step guides from someone who knows the ropes</h2>
+          <div class="col-md-3 d-flex justify-content-center">
+            <img class="" src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/0dab04c4-907a-4de4-bcfd-a5ac489cff08.png" alt="abby smiling">
+          </div>
+          <div class="col-md-9">
+            <h3 class="mb-5">Ask Abby</h3>
+            <div class="d-flex abby-container align-items-baseline" style="gap: 20px;">
+               <img style="width: 100%; margin: auto; display: block;" class="vidyard-player-embed abby-video"
+                     src="https://play.vidyard.com/RgSPV4rzggFWiCBf1B1nKP.jpg"
+                     data-uuid="RgSPV4rzggFWiCBf1B1nKP" data-v="4" data-type="inline"
+                     alt="What do I do during my first week at SNHU?" />
+
+                      <img style="width: 100%; margin: auto; display: block;" class="vidyard-player-embed abby-video"
+                     src="https://play.vidyard.com/QfFhgNfRnTUT9wT3fCWH6Q.jpg"
+                     data-uuid="QfFhgNfRnTUT9wT3fCWH6Q" data-v="4" data-type="inline"
+                     alt="How much time should I spend in each course?" />
+
+                     <img style="width: 100%; margin: auto; display: block ;" class="vidyard-player-embed abby-video"
+                     src="https://play.vidyard.com/AVsq5yvPPixPRGjDXbGHRL.jpg"
+                     data-uuid="AVsq5yvPPixPRGjDXbGHRL" data-v="4" data-type="inline"
+                     alt="When should I reach out to my instructor?" />
+
+                      <img style="width: 100%; margin: auto; display: block;" class="vidyard-player-embed abby-video"
+                     src="https://play.vidyard.com/EB4trUDncjWU8CseKQ1rPb.jpg"
+                     data-uuid="EB4trUDncjWU8CseKQ1rPb" data-v="4" data-type="inline" />
+            </div>
+          </div>
         </div>
+    </div>
+</section>
 
-        <div class="col-md-4 d-flex justify-content-center align-items-center">
-          <p  style="color: #fff;">
-            © %%=FormatDate(Now(), "yyyy")=%%<br>
-            Southern New Hampshire University<br>
-            View our <a href="https://www.snhu.edu/privacy-policy" class="text-link primary-link">Privacy Policy</a> | <a
-              href="https://www.snhu.edu/about-us/accessibility" class="text-link primary-link">Accessibility at SNHU</a>
+ <!--FAQ Accordions-->
+ <section class="py-5 my-5">
+    <div role="region" aria-label="Frequently Asked Questions" class="container col-12 ">
+      <h2 class="display-5 fw-bold px-3 py-3">Frequently Asked Questions
+      </h2>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Who is my first contact at SNHU when I need help with anything?
+            </button>
+          </h3>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Once you’ve registered for your first-term courses, you'll be assigned an academic advisor,
+                who will
+                serve as your main contact throughout your journey at SNHU. Your academic advisor will work
+                closely with
+                you to set goals, create your personalized course plan and develop your broader support
+                network. Think of
+                your academic advisor as your SNHU coach, cheerleader, mentor and troubleshooter.
+              </p>
+              <p>Video: 
+                <a href="https://video.snhu.edu/watch/JoFYnRdg1Ti5DAe1NXreBG?" class="text-link-drk"
+                   target="_blank">3 Reasons to Add Your Advisor to Your Favorite Contacts</a>
+              </p>
+              <p>Advising email: 
+                <a href="mailto:Advising@SNHU.edu" class="text-link-drk"
+                   target="_blank">advising@snhu.edu</a>
+              </p>
+              <p>Advising phone: 
+                <a href="tel:8775914723" class="text-link-drk"
+                   target="_blank">877.591.4723</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              How do I request learning accommodations for a known or suspected disability?
+            </button>
+          </h3>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>SNHU is committed to ensuring equal access to students with physical, medical, mental health
+                and learning needs in accordance with Section 504 of the Rehabilitation Act of 1973, Title
+                III of the Americans with Disabilities Act (ADA) of 1990 and the Americans with Disabilities
+                Act Amendments Act (ADAA) of 2008. Our Online Accessibility Center (OAC) is ready to support
+                students with documented disabilities or diagnoses.
+              </p>
+              <p>To request an accommodation, please complete the 
+                <a
+                   href="https://snhu-accommodate.symplicity.com/public_accommodation/"
+                   class="text-link-drk" target="_blank">Accessibility Center Intake Request Form</a> or
+                speak to a member of the OAC by calling
+                866.305.9430.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              What kind of computer do I need to be an online SNHU student?
+            </button>
+          </h3>
+          <div id="flush-collapseThree" class="accordion-collapse collapse"
+               data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>You will need to make sure you have access to a computer and the internet before the start of your first term. Specifically, here is what you’ll need to have for most degree programs:
+              </p>
+              <ul>
+                <li>A laptop or desktop computer with a Windows or Apple Operating system. 
+                  <a href="#">View Tech Requirements for SNHU Students</a>.
+                </li>
+                <li>Internet access — about 15 hours per week per undergraduate course. 5 MBPS download speed required.
+                </li>
+                <li>Anti-virus software — your internet service provider may include this with your subscription.
+                </li>
+              </ul>
+              <br>
+              <h3>IMPORTANT: Chromebooks or iPads cannot be primary devices
+                </h3>
+              <p>
+                <strong>Chromebooks (Chrome OS) and iPads (iOS) do not meet the minimum requirements for coursework at SNHU.</strong>
+                These offer limited functionality and do not work with some course technologies. They are not acceptable as the only device you use for coursework. While these devices are convenient and may be used for some course functions, they cannot be your primary device.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              How do I set up my SNHU Email on my iPhone or Android device?
+            </button>
+          </h3>
+          <div id="flush-collapseFour" class="accordion-collapse collapse"
+               data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Now that you’re a registered student (Yay!), your student email address serves as your
+                official primary
+                contact. Don’t miss important information from instructors, advisors and student financial
+                services. Log
+                in and check your SNHU webmail often. Watch these videos on how to set up SNHU Email on
+                iPhone or Android
+                devices.
+              </p>
+              <p>Video: 
+                <a href="https://www.youtube.com/watch?v=R_rlA_BVukM" class="text-link-drk"
+                   target="_blank">How to
+                  Set Up Your SNHU Email on an iPhone</a>
+              </p>
+              <p>Video: 
+                <a href="https://www.youtube.com/watch?v=_2nzU60cuY8" class="text-link-drk"
+                   target="_blank">How to
+                  Set Up Your SNHU Email on an Android</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              What are discussion post assignments at SNHU?
+            </button>
+          </h3>
+          <div id="flush-collapseFive" class="accordion-collapse collapse"
+               data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p> At SNHU, most, if not all, of your classes will have discussion board posts as a big part of
+                your grade. With these assignments, you post your answer to a question and then respond to
+                your classmates' posts throughout the week.
+              </p>
+              <p>Discussion assignments are a great opportunity for the class to interact, to engage and to
+                learn from
+                each other. In most classes, your weekly discussion post is due Thursday night, with
+                responses to two of
+                your classmates’ posts due Sunday night.
+              </p>
+              <p>Discussion posts are an important part of your course grade, so we recommend starting them
+                early in
+                the week and giving yourself plenty of time to complete them by the Thursday night deadline.
+              </p>
+              <p>Video: 
+                <a href="https://video.snhu.edu/watch/k979SNAq46DCBwGFT1Z7Re?" class="text-link-drk"
+                   target="_blank">5 Techniques for Crushing Discussion Board Assignments</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              Can I get someone to check my paper before I turn it in?
+            </button>
+          </h3>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Yes! The SNHU academic support team is happy to give you feedback on your written assignments
+                and help
+                you with grammar and style. Their job is to help you relax and feel more confident about the
+                work you're
+                turning in.
+              </p>
+              <p>Here's how to get written feedback on your written assignments.
+              </p>
+              <p>
+              <ol>
+                <li> Log in to 
+                  <a href="https://learn.snhu.edu/" class="text-link-drk"
+                     target="_blank">Brightspace</a>.
+                </li>
+                <li> Access any of your courses.
+                </li>
+                <li> Click on the "Academic Support" link in the upper navigation bar.
+                </li>
+                <li>Click on "written feedback".
+                </li>
+                <li>Then complete the form to let our tutors know what you're working on.
+                </li>
+              </ol>
+              </p>
+            <p>Targeted feedback will be returned to you within 12 hours.
+            </p>
+            <p>Video: 
+              <a href="https://video.snhu.edu/watch/QZg1oB1ZaKCDbxveiRJ5Ve?" class="text-link-drk"
+                 target="_blank">“Is My Paper OK?” SNHU Academic Support Will Review It for You!</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+            How do I get free help with math and statistics assignments?
+          </button>
+        </h3>
+        <div id="flush-collapseSeven" class="accordion-collapse collapse"
+             data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>If there's one thing we want you to know about the SNHU academic support team, it's that we
+              love it when
+              students ask for help, especially in math and statistics.
+            </p>
+            <p>We’ve created an academic support page that gives SNHU students access to 24/7 drop-in
+              tutoring,
+              workshops, academic coaching, peer tutoring and more.
+            </p>
+            <p>Here's how to get written feedback on your written assignments.
+            </p>
+            <p>
+            <ol>
+              <li>Log in to 
+                <a href="https://learn.snhu.edu/" class="text-link-drk"
+                   target="_blank">Brightspace</a>.
+              </li>
+              <li>Access any of your courses.
+              </li>
+              <li>Click on the "Academic Support" link in the upper navigation bar.
+              </li>
+              <li>Click on "written feedback".
+              </li>
+              <li>Then complete the form to let our tutors know what you're working on.
+              </li>
+            </ol>
+          <p>Video: 
+            <a href="https://video.snhu.edu/watch/8oe8VLCK6DZZhPsYCDo8CV?" class="text-link-drk"
+               target="_blank">Tricky Math or Statistics Problem? Contact SNHU Academic Support
+              24/7</a>
           </p>
         </div>
       </div>
     </div>
-  </footer>
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+          How do I download a free copy of Microsoft Office 365 software?
+        </button>
+      </h3>
+      <div id="flush-collapseEight" class="accordion-collapse collapse"
+           data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <p>For many classes, you’ll need software for creating text documents, spreadsheets,
+            presentations and
+            emails. SNHU students can download the Microsoft Office 365 suite of applications for free
+            using their
+            SNHU email address. To get your copy, visit 
+            <a href="https://www.microsoft.com/en-us/education/products/office?ms.officeurl=getoffice365?ms.officeurl=getoffice365"
+               class="text-link-drk" target="_blank">Microsoft 365 for Education</a>.
+          </p>
+          <p>Video: 
+            <a href="https://video.snhu.edu/watch/SGSw1aqFxzaipZa7CLQXWZ?" class="text-link-drk"
+               target="_blank">What is Microsoft Office 365?</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+          Can you submit the same paper for two classes?
+        </button>
+      </h3>
+      <div id="flush-collapseNine" class="accordion-collapse collapse"
+           data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <p>It is a violation of SNHU’s Academic Honesty policies to submit the same paper for two
+            classes without
+            prior permission from the instructor. This is referred to as "Multiple Submissions" or
+            "Self-Plagiarism."
+            Please refer to the 
+            <a
+               href="https://www.snhu.edu/admission/academic-catalogs/uc-catalog#/policy/rJJrxWQwt?bc=true&bcCurrent=Academic%20Integrity%20Policy&bcGroup=Student%20Code%20of%20Conduct&bcItemType=policies"
+               class="text-link-drk" target="_blank">SNHU Academic Integrity Policy for the University
+              College (UC)</a>
+            and/or 
+            <a
+               href="https://www.snhu.edu/admission/academic-catalogs/coce-catalog#/policy/rJJrxWQwt?bc=true&bcCurrent=Academic%20Integrity%20Policy&bcGroup=Student%20Code%20of%20Conduct&bcItemType=policies"
+               class="text-link-drk" target="_blank">SNHU Academic Integrity Policy for the Global
+              Campus (GC)</a> for
+            specific definitions and details.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+          Who can I talk to if I have questions about my financial account or paying for college?
+        </button>
+      </h3>
+      <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <p>We’ve created a student finance resource page where you can schedule a call with an SNHU
+            student finance
+            counselor. 
+            <a href="https://cloud.dream.snhu.edu/sfs-resources">Here</a> you’ll find links,
+            FAQs and videos. You can also always call your advisor with any
+            questions, and they’ll be happy to connect you to the right resources.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseEleven" aria-expanded="false"
+                aria-controls="flush-collapseEleven">
+          Does SNHU offer free mental health counseling and wellness resources?
+        </button>
+      </h3>
+      <div id="flush-collapseEleven" class="accordion-collapse collapse"
+           data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <p>
+            At SNHU, we believe your academic success is connected to your overall well-being. And we’re here to help support both.
+          </p>
+          SNHU has implemented the Mantra Care Hub, which consolidates a range of support services for all students, including: 
+          <ul>
+            <br>
+            <li>Telehealth counseling (up to 6 free sessions per academic year) 
+            </li>
+            <li> Self-guided wellness modules 
+            </li>
+            <li> Productivity coaching  
+            </li>
+            <li>Mental Health Peer support via TogetherAll 
+            </li>
+            <li> Access to basic needs via SingleStop
+            </li>
+            <li> 24/7 crisis hotline through ConnectNow 
+            </li>
+            <li> Faculty and staff consultations (not direct access, but support roles) 
+            </li>
+          </ul>
+          <p>
+            Learners are not required to have insurance to utilize this program. They can access the Mantra Care                Hub via their mySNHU student portal or by visiting 
+            <a href="https://hub.mantrahealth.com/login?utm_content=1158&to=%2F%3Futm_content%3D1158" target="_blank">www.mantrahealth.com/snhu</a> and using their SNHU credentials. The Mantra Care Hub is also the main access point for all services offered by Mantra, including ConnectNow, TogetherAll and SingleStop. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwelve" aria-expanded="false"
+                aria-controls="flush-collapseTwelve">
+          What happens if I’m a bit late submitting my Thursday night discussion post?
+        </button>
+      </h3>
+      <div id="flush-collapseTwelve" class="accordion-collapse collapse"
+           data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <p>First, don’t become discouraged. If you miss the Thursday night deadline, you can still turn
+            in your discussion post(s) by Sunday night. Remember — you’ll also have to respond to two of
+            your classmates’ discussions, as well as submit your regular Sunday assignment (if
+            applicable).
+          </p>
+          <p>If you’re experiencing any problems with logging in, understanding your assignment or any
+            other situation, please don’t hesitate to reach out to your advisor or instructor to let
+            them know. We’re here to help!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThirteen" aria-expanded="false"
+                aria-controls="flush-collapseThirteen">
+          What do I do if I miss a Sunday night deadline on a graded assignment?
+        </button>
+      </h3>
+      <div id="flush-collapseThirteen" class="accordion-collapse collapse"
+           data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <p>If you missed the Sunday night deadline, you’re still able to submit most graded assignments
+            by the following Sunday. (Note: Late discussion board posts may not be accepted. Check with
+            your instructor.)
+          </p>
+          <p>And while late assignments may receive a 10% penalty, that’s considerably better than taking
+            a zero on an assignment!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFourteen" aria-expanded="false"
+                aria-controls="flush-collapseFourteen">
+          Does SNHU offer lifetime career services?
+        </button>
+      </h3>
+      <div id="flush-collapseFourteen" class="accordion-collapse collapse"
+           data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <p>When you enroll at SNHU, you’ll have access to career services during your studies and after
+            graduation.
+          </p>
+          <p>Helping you prepare for a rewarding career is something that starts on Day 1 and lasts a
+            lifetime. Your admission counselor, dedicated academic advisor and the SNHU career services
+            team will partner with you to help you reach your next goal — and the ones after that.
+          </p>
+          <ul>
+            <li>
+              <strong>Explore career paths while you learn</strong> — with career assessments and
+              discussions about what degrees align to different careers.
+            </li>
+            <li>
+              <strong>Build your personal brand</strong> — including resume building and interviewing
+              skills. We’ll help you use the skills you’re learning while at SNHU to market yourself
+              in the workplace even before you graduate.
+            </li>
+            <li>
+              <strong>Learn how to build your career network</strong> — among employers, internship
+              programs and fellow students and alumni.
+            </li>
+            <li>
+              <strong>Make your next career move</strong> — with targeted job and internship search
+              strategies. You’ll have numerous opportunities to connect with employers through SNHU
+              events and access to the Handshake online recruiting platform. 
+            </li>
+          </ul>
+          <p>
+            <strong>To connect with SNHU career services, call 888.672.1458 or email
+              cocecareer@snhu.edu.</strong>
+          </p>
+          <p>
+            <strong>Hours</strong>
+          </p>
+          <ul>
+            <li>Monday - Thursday, 8 am - 8 pm (ET)
+            </li>
+            <li>Friday, 8 am - 4:30 pm (ET)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFifteen" aria-expanded="false"
+                aria-controls="flush-collapseFifteen">
+          How do I protect my academic integrity? (Avoid plagiarism and contract cheating.)
+        </button>
+      </h3>
+      <div id="flush-collapseFifteen" class="accordion-collapse collapse"
+           data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <p>Having academic integrity means acting responsibly and ethically as a student. And a big part
+            of it involves submitting original work for credit in your courses.
+          </p>
+          <p>It means not plagiarizing, which is submitting someone else’s work as your own, even if you
+            do so unintentionally. And, of course, it means not paying someone to do your work for you,
+            which is called contract cheating.
+          </p>
+          <p>At SNHU, academic integrity is crucial to both your reputation and ours. 
+          </p>
+          <p>That’s why we offer so many resources that make protecting your academic integrity
+            easier. Here are the main four we recommend you use:
+          </p>
+          <ol>
+            <li>
+              <strong>Our online citation guide</strong>, which contains instructions and examples
+              on how to make citations in different formats.
+            </li>
+            <li>
+              <strong><a href="https://lhh.tutor.com/SNHU" class="text-link-drk" target="_blank">Our
+                writing tutors</a></strong>, who can provide feedback on your papers before you
+              submit them to your instructors.
+            </li>
+            <li>
+              <strong>Your SNHU instructors</strong>, whom you can contact via email with any
+              questions you have about assignments and sources. 
+            </li>
+            <li>
+              <strong>Your academic advisor</strong> can also help you with any questions about
+              academic integrity. Call your advisor at 877.591.4723 or email advising@snhu.edu.
+            </li>
+          </ol>
+          <p>These four resources are here to help you avoid the appearance or consequences of cheating,
+            which can include failing a course and getting expelled from the university. 
+          </p>
+          <p>By taking advantage of these resources, you can help ensure your academic integrity is
+            protected. And by doing that, you can earn a degree you're proud of.
+          </p>
+          <p>Video: 
+            <a href="https://video.snhu.edu/watch/JP3WwFRU3pxhiM7oDPdBbq?" class="text-link-drk"
+               target="_blank">Protecting Your Academic Integrity</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSixteen" aria-expanded="false"
+                aria-controls="flush-collapseSixteen">
+          What citation style should I use?
+        </button>
+      </h3>
+      <div id="flush-collapseSixteen" class="accordion-collapse collapse"
+           data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <p>First, it's important that you use the citation style required by your assignment or
+            professor (your syllabus or assignment guidelines/description should list the required
+            citation style but if not, ask your professor).
+          </p>
+          <p>If you are permitted to choose a citation style to use, it may be easiest to choose one of
+            the most common citation styles (APA, MLA, and Chicago).
+          </p>
+          <p>To read more about choosing citation styles, visit this article from the 
+            <a
+               href="https://libanswers.snhu.edu/faq/69000" class="text-link-drk"
+               target="_blank">Shapiro Library</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+
+  <!--Accreditation-->
+
+  <div role=" region" aria-label="Accreditations"
+                        class="container-fluid align-items-center text-center py-5 bg-light accreditation">
+                        <img class="col-10 col-xxl-6"
+                          src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/da987c7f-9fd4-420f-a9ac-3b64535744f8.png"
+                          alt="SNHU accreditation logos" width="100%" height="auto">
+                </div>
+
+                <!--Footer-->
+
+              
+    <footer class="py-5">
+      <div class="container-fluid">
+        <div class="row">
+
+           <div class="col-md-4 d-flex justify-content-center align-items-center my-3">
+            <a href="https://www.snhu.edu/" target="_blank" class="link-dark text-decoration-none">
+              <img src="https://client-data.knak.io/production/email_assets/5fd10b569d941/Y9PaAR4BN1uvwQSeUR37Jtdwa2YUrN1By1RZIsk8.png" height="80" alt="SNHU logo">
+            </a>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <p class="" style="color:#fff"> <strong>SNHU Admission</strong> 
+              <br>
+              <a href="Tel:8883870864" class="text-link">888.387.0864</a>
+              <br>
+              <a href="mailto:admissions@snhu.edu" class="text-link primary-link"> admissions@snhu.edu </a>
+          </p></div>
+
+           <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <p class="" style="color:#fff"> <strong>SNHU Advising</strong>
+              <br>
+              <a href="Tel:8883870864" class="text-link">877.591.4723</a>
+              <br>
+              <a href="mailto:admissions@snhu.edu" class="text-link primary-link"> advising@snhu.edu </a>
+          </p></div>
+         <hr>
+
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <p style="color: #fff;">
+              © 2025 
+              Southern New Hampshire University
+            </p>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <p style="color: #fff;">
+              View our <a href="https://www.snhu.edu/privacy-policy" class="text-link primary-link">Privacy Policy</a> 
+            </p>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <p style="color: #fff;">
+              <a href="https://www.snhu.edu/about-us/accessibility" class="text-link primary-link">Accessibility at
+                SNHU</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
