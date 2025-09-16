@@ -41,7 +41,7 @@ ENDIF
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Starter Template </title>
+  <title> Learner Survey Thank You </title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -168,9 +168,9 @@ ENDIF
   </header>
 
 
-  <section class="py-5" style="height:38rem; overflow:hidden; position:relative;">
+  <section class=" hero-section" style="height:38rem; overflow:hidden; position:relative;">
     <!-- Right-side image only -->
-    <img src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/ed8eebf9-fb52-4edf-8354-67e2823bf0f4.png"
+    <img class="welcome-img" src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/ed8eebf9-fb52-4edf-8354-67e2823bf0f4.png"
       style="position:absolute; top:0; right:0; height:100%; border-radius:0 0 0 7rem; width: 60%;" />
 
     <div class="container position-relative">
@@ -179,6 +179,7 @@ ENDIF
           <h1 style="font-size: 48px; color:#fff;">Dear Tiffany:<br>
             <span style="font-size: 40px; color:#fff;">You belong here. And we believe in you.</span>
           </h1>
+          <br>
           <h3 style="color:#fff;">Thank you for letting us know how you’re feeling!</h3>
           <p style="color:#fff;">Your admission counselor will receive your answers and reach out to you with help and
             info if you’re not feeling confident on anything. You can also call or text your admission counselor
@@ -188,24 +189,24 @@ ENDIF
     </div>
   </section>
 
-  <section class="py-5 my-5">
+  <section class="my-5 video-resource-section">
     <div class="container">
       <div class="row">
         <h2 class="text-center">In the meantime, here are some how-to videos and resource links sorted by survey
           subject.</h2>
 
-        <div class="col-md-12 mt-5">
+        <div class="col-md-12 ">
           <div class="accordion survey-accordion" id="resourceAccordion">
 
-            <!-- Accordion Item 1 -->
+            <!-- Accordion Item: Accessing Course Materials -->
             <div class="accordion-item">
-              <h2 class="" id="headingOne">
+              <h2 class="" id="courseMaterials">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                   aria-expanded="true" aria-controls="collapseOne">
                   How are you feeling about your current access to a laptop and the internet?
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="courseMaterials"
                 data-bs-parent="#resourceAccordion">
                 <div class="accordion-body row">
                   <div class="col-md-6">
@@ -220,20 +221,20 @@ ENDIF
                     <div class="mt-3 info-text">
                     <h5 class="mt-3">What kind of computer do I need to be an online SNHU student?</h5>
                     <p>You’ll need to make sure you have access to a computer and the internet before the start of your first term.</p>
-                    <a href="https://www.snhu.edu" target="_blank" class="btn btn-primary">See more information.</a>
+                    <a href="https://cloud.dream.snhu.edu/what-kind-of-computer" target="_blank" class="btn btn-primary">See more information</a>
                     </div>
                   </div>
 
                   <div class="col-md-6">
-                   <div class="mb-3"> What you’ll need:</div>
+                   <div class="mb-3 need-text"> What you’ll need:</div>
                     <ul>
-                      <li><strong>Laptop or desktop:</strong> Windows 11 Home or Pro or comparable Apple Operating system. See minimum required specs.</li>
+                      <li><strong>Laptop or desktop:</strong> Windows 11 Home or Pro or comparable Apple Operating system. <a href="https://cloud.dream.snhu.edu/what-kind-of-computer" target="_blank">See minimum required specs.</a></li>
                       <li><strong>Internet access:</strong> We recommend 15 hours per week per class.</li>
                       <li><strong>Anti-virus software:</strong> Your internet service provider may include this with your subscription.</li>
                     </ul>
-                    <div class="mb-3">Who to call for help
+                    <div class="mb-3 call-text">Who to call for help
                       <br>
-                    <a href="tel:8883870864" class="btn btn-default mt-3">Admission at 888.387.0864</a>
+                    <a href="tel:8883870864" class="btn btn-default mt-3" target="_blank">Admission at 888.387.0864</a>
                     </div>
                     </div>
                   </div>
@@ -241,24 +242,67 @@ ENDIF
                 </div>
               </div>
 
-              <!-- Accordion Item 2 -->
+               <!-- Accordion Item: Logging in -->
             <div class="accordion-item">
-              <h2 class="" id="headingTwo">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                  aria-expanded="true" aria-controls="collapseTwo">
-                  How are you feeling about obtaining and accessing your books, e-books and course materials?
+              <h2 class="" id="loggingIn">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLogin"
+                  aria-expanded="true" aria-controls="collapseLogin">
+                  How are you feeling about being able to log in to mySNHU, your SNHU webmail 
+                  <br>
+                  and your Brightspace learning account?
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
+              <div id="collapseLogin" class="accordion-collapse collapse " aria-labelledby="loggingIn"
                 data-bs-parent="#resourceAccordion">
                 <div class="accordion-body row">
                   <div class="col-md-5">
-                    <div class="img-container position-relative" style="height: 24rem;">
+                    <div class="video-container position-relative" style="height: 27rem;">
                       <img class="back-img"
                         src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/69276ba0-7a56-4188-a0a6-af2c9c7dbd87.png"
                         alt="Rectangle"  height="auto" />
 <iframe class="vidyard_iframe vidyard-player-container-survey " title="How to create your single sign-on password" src="//play.vidyard.com/ztt6T1BwZLg632fyJwzpER.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+                    </div>
+                    <div class="mt-3 info-text">
+  <h5 class="mt-3">How to set (and reset) your SNHU single sign-on password</h5>
+                    <p>When you receive the email with your single sign-on username, the first thing to do is to create your password by clicking the link to the SNHU password reset page.</p>
+                    <a href="https://cloud.dream.snhu.edu/create-your-sso?vysfid=0033l000031NP7YAAW" target="_blank" class="btn btn-primary">Learn More About Single Sign-On</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-7">
+                    <ul>
+                   <li> Use your SNHU Single Sign-On username to log in to mySNHU, which is your virtual campus </li> 
+<li>Access your SNHU webmail by selecting “Webmail” from the upper right navigation bar</li>
+<li>Access Brightspace by selecting “Brightspace” from the upper right navigation bar</li>
+                    </ul>
+                    <div class="mb-3 call-text">Who to call for help
+                      <br>
+                    <a href="tel:8883870864" class="btn btn-default mt-3" target="_blank">Admission at 888.387.0864</a>
+                    </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Accordion Item: Accessing Course Materials -->
+            <div class="accordion-item">
+              <h2 class="" id="accessingCourseMaterials">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                  aria-expanded="true" aria-controls="collapseTwo">
+                  How are you feeling about obtaining and accessing your books, e-books and course materials?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="accessingCourseMaterials"
+                data-bs-parent="#resourceAccordion">
+                <div class="accordion-body row">
+                  <div class="col-md-5">
+                    <div class="video-container position-relative" style="height: 27rem;">
+                      <img class="back-img"
+                        src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/69276ba0-7a56-4188-a0a6-af2c9c7dbd87.png"
+                        alt="Rectangle"  height="auto" />
+<iframe class="vidyard_iframe vidyard-player-container-survey"  title="How Do I Buy My Books? (Ask Abby!)" src="//play.vidyard.com/1Z5dKCDBufkMwJT2K5Gh4R.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="mt-3 info-text">
   <h5 class="mt-3">How do I buy my books? </h5>
@@ -273,15 +317,15 @@ ENDIF
 <li>Most of the time, your materials will be e-books you read on your laptop</li>
 <li>Most of the time your e-books will be listed in each course syllabus in Brightspace</li>
 <li>Sometimes, course materials will be listed in class announcements or in weekly modules</li>
-<li>Most e-books can be purchased at the SNHU Online Bookstore</li>
+<li>Most e-books can be purchased at the <a href="https://bncvirtual.com/snhu" target="_blank">SNHU Online Bookstore</a></li>
 <li>By entering your SNHU ID# in the Get Started section of the bookstore, you can see a list of all the e-books you need to purchase for the term</li>
 <li>If you have questions about using financial aid book vouchers for your e-books, call SNHU financial services at 877.455.7648 with any questions about using them</li>
 <li>You should purchase your e-books and other listed materials BEFORE the term begins</li>
                     </ul>
-                    <div class="mb-3">Who to call for help
+                    <div class="mb-3 call-text">Who to call for help
                       <br>
-                    <a href="tel:8883870864" class="btn btn-default mt-3">Admission at 888.387.0864</a>
-                    <a href="tel:8774557648" class="btn btn-default mt-3">Student Financial Services at 877.455.7648</a>
+                    <a href="tel:8883870864" class="btn btn-default mt-3" target="_blank">Admission at 888.387.0864</a>
+                    <a href="tel:8774557648" class="btn btn-default mt-3" target="_blank">Student Financial Services at 877.455.7648</a>
                     </div>
                     </div>
                   </div>
@@ -289,19 +333,19 @@ ENDIF
                 </div>
               </div>
 
-              <!-- Accordion Item 3 -->
+              <!-- Accordion Item: Finding and Completing Assignments -->
             <div class="accordion-item">
-              <h2 class="" id="headingThree">
+              <h2 class="" id="findingAssignments">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
                   aria-expanded="true" aria-controls="collapseThree">
                  How do you feel about your ability to find and complete your assignments?
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree"
+              <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="findingAssignments"
                 data-bs-parent="#resourceAccordion">
                 <div class="accordion-body row">
                   <div class="col-md-5">
-                    <div class="img-container position-relative" style="height: 24rem;">
+                    <div class="video-container position-relative" style="height: 27rem;">
                       <img class="back-img"
                         src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/69276ba0-7a56-4188-a0a6-af2c9c7dbd87.png"
                         alt="Rectangle"  height="auto" />
@@ -310,7 +354,7 @@ ENDIF
                     <div class="mt-3 info-text">
                <h5 class="mt-3">How to preview your courses in Brightspace </h5>
                     <p>Brightspace is the learning platform where all your coursework happens — and it’s available to you 24/7 wherever you have an internet connection</p>
-                    <a href="https://www.snhu.edu" target="_blank" class="btn btn-primary">See More Brightspace and Assignment Videos.</a>
+                    <a href="#" target="_blank" class="btn btn-primary">See More Brightspace and Assignment Videos.</a>
                     </div>
                   </div>
 
@@ -322,7 +366,7 @@ ENDIF
                    <li>Select a weekly Learning Module from the course dropdown menu</li>
                    <li>View learning materials and complete assignments listed in that section   </li>
                     </ul>
-                    <div class="mb-3">Who to call for help
+                    <div class="mb-3 call-text">Who to call for help
                       <br>
                       <a href="tel:8883870864" class="btn btn-default mt-3">Admission at 888.387.0864</a>
                     </div>
@@ -333,19 +377,19 @@ ENDIF
               </div>
 
 
-               <!-- Accordion Item 4 -->
+               <!-- Accordion Item: Contacting Support -->
             <div class="accordion-item">
-              <h2 class="" id="headingFour">
+              <h2 class="" id="contactingSupport">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
                   aria-expanded="true" aria-controls="collapseFour">
                  How confident are you about knowing how to contact your SNHU advisor, faculty, tutors, mental health counselors, academic accommodations center?
                 </button>
               </h2>
-              <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour"
+              <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="contactingSupport"
                 data-bs-parent="#resourceAccordion">
                 <div class="accordion-body row">
                   <div class="col-md-5">
-                    <div class="img-container position-relative" style="height: 24rem;">
+                    <div class="video-container position-relative" style="height: 27rem;">
                       <img class="back-img"
                         src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/69276ba0-7a56-4188-a0a6-af2c9c7dbd87.png"
                         alt="Rectangle"  height="auto" />
@@ -361,13 +405,13 @@ ENDIF
                   <div class="col-md-7">
                     <ul>
                   <li>Your dedicated advisor is your go-to person for most academic or other issues</li>
-                  <li>Free 24/7 tutoring is available via our Academic Support page in Brightspace (or within any course)</li>
-                  <li>Free 24/7 counseling is available via our Health and Wellness Resource page</li>
-                  <li>Our Online Accessibility Center (OAC) is ready to support students with documented disabilities or diagnoses</li>
+                  <li>Free 24/7 tutoring is available via our <a href="https://lhh.tutor.com/Authentication/AccessDenied.aspx?NoGuid=1" target="_blank">Academic Support page</a> in Brightspace (or within any course)</li>
+                  <li>Free 24/7 counseling is available via our <a href="unify-snhu.my.site.com/mysnhu/s/article/Health-and-Wellness-Resources" target="_blank">Health and Wellness Resource page</a></li>
+                  <li>Our <a href="https://snhu-accommodate.symplicity.com/public_accommodation/" target="_blank">Online Accessibility Center (OAC)</a> is ready to support students with documented disabilities or diagnoses</li>
                     </ul>
-                    <div class="mb-3">Who to call for help
+                    <div class="mb-3 call-text">Who to call for help
                       <br>
-                      <a href="tel:8775914723" class="btn btn-default mt-3">Your student advisor at 877.591.4723</a>
+                      <a href="tel:8775914723" class="btn btn-default mt-3" target="_blank">Your student advisor at 877.591.4723</a>
                     </div>
                     </div>
                   </div>
@@ -375,28 +419,29 @@ ENDIF
                 </div>
               </div>
 
-                <!-- Accordion Item 5 -->
+                <!-- Accordion Item: Time Management -->
             <div class="accordion-item">
-              <h2 class="" id="headingFive">
+              <h2 class="" id="timeManagement">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
                   aria-expanded="true" aria-controls="collapseFive">
-                 How are you feeling about knowing how much time you’ll need to spend on your coursework each week and when you’ll study?
+                 How are you feeling about knowing how much time you’ll need to spend on your coursework each week <br>
+                  and when you’ll study?
                 </button>
               </h2>
-              <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive"
+              <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="timeManagement"
                 data-bs-parent="#resourceAccordion">
                 <div class="accordion-body row">
                   <div class="col-md-5">
-                    <div class="img-container position-relative" style="height: 24rem;">
+                    <div class="video-container position-relative" style="height: 27rem;">
                       <img class="back-img"
                         src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/69276ba0-7a56-4188-a0a6-af2c9c7dbd87.png"
                         alt="Rectangle"  height="auto" />
-                       <iframe class="vidyard_iframe vidyard-player-container-survey " title="How to Get Good Grades at SNHU? (The Answer is in the Rubric)" src="//play.vidyard.com/7h6p6NTg6AWkSnUrjmbx8P.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     <iframe class="vidyard_iframe vidyard-player-container-survey" title="The advantage of no set class times" src="//play.vidyard.com/NDSZkoYqypYvFxjiyQB77d.html?" width="640" height="360" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="mt-3 info-text">
                       <h5 class="mt-3">Our #1 tip for success: Map out your week </h5>
                       <p>Trust us. Mapping out your week help you to balance school, work and life.</p>
-                      <a href="https://www.snhu.edu" target="_blank" class="btn btn-primary">See More Tutoring and Support Team Videos</a>
+                      <a href="#" target="_blank" class="btn btn-primary">See More Tutoring and Support Team Videos</a>
                     </div>
                   </div>
 
@@ -406,7 +451,7 @@ ENDIF
                   <li>No set class times means you can pick the best times and days to study</li>
                   <li>Weekly assignments on Thursdays and Sundays will keep you on track</li>
                     </ul>
-                    <div class="mb-3">Who to call for help
+                    <div class="mb-3 call-text">Who to call for help
                       <br>
                       <a href="tel:8775914723" class="btn btn-default mt-3">Your student advisor at 877.591.4723</a>
                     </div>
@@ -416,15 +461,15 @@ ENDIF
                 </div>
               </div>
 
-   <!-- Accordion Item 6 -->
+           <!-- Accordion Item: Financial Aid -->
             <div class="accordion-item">
-              <h2 class="" id="headingSix">
+              <h2 class="" id="financialAid">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
                   aria-expanded="true" aria-controls="collapseSix">
                  How do you feel about your understanding of your financial aid or tuition bill
                 </button>
               </h2>
-              <div id="collapseSix" class="accordion-collapse collapse " aria-labelledby="headingSix"
+              <div id="collapseSix" class="accordion-collapse collapse " aria-labelledby="financialAid"
                 data-bs-parent="#resourceAccordion">
                 <div class="accordion-body row">
                   <div class="col-md-5">
@@ -445,13 +490,13 @@ ENDIF
 
                   <div class="col-md-7">
                     <ul>
-                      <li>SNHU Student finance services (SFS) is here to answer questions about your tuition bill, financial aid</li>
+                      <li><a href="https://cloud.dream.snhu.edu/sfs-resources" target="_blank">SNHU Student finance services (SFS)</a> is here to answer questions about your tuition bill, financial aid</li>
                       <li>Finance counselors can also answer questions about the Free Application for Federal Student Aid (FAFSA)</li>
                     </ul>
                     <div class="mb-3">Who to call for help
                       <br>
-                      <a href="tel:8774557648" class="btn btn-default mt-3">Your student advisor at 877.455.7648</a>
-                      <a href="tel:8775914723" class="btn btn-default mt-3">Schedule a call with SFS</a>
+                      <a href="tel:8774557648" class="btn btn-default mt-3" target="_blank">Your student advisor at 877.455.7648</a>
+                      <a href="https://cloud.dream.snhu.edu/sfs-resources" class="btn btn-default mt-3" target="_blank">Schedule a call with SFS</a>
                     </div>
                     </div>
                   </div>
@@ -460,26 +505,25 @@ ENDIF
               </div>
                
 
-              
-   <!-- Accordion Item 7 -->
+
+           <!-- Accordion Item: Sense of Belonging -->
             <div class="accordion-item">
-              <h2 class="" id="headingSeven">
+              <h2 class="" id="senseOfBelonging">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
                   aria-expanded="true" aria-controls="collapseSeven">
                  How much do you feel a sense of belonging at SNHU?
                 </button>
               </h2>
-              <div id="collapseSeven" class="accordion-collapse collapse " aria-labelledby="headingSeven"
+              <div id="collapseSeven" class="accordion-collapse collapse " aria-labelledby="senseOfBelonging"
                 data-bs-parent="#resourceAccordion">
                 <div class="accordion-body row">
                   <div class="col-md-5">
-                    <div class="img-container position-relative" style="height: 24rem;">
+                    <div class="video-container position-relative" style="height: 27rem;">
                       <img class="back-img"
                         src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/69276ba0-7a56-4188-a0a6-af2c9c7dbd87.png"
                         alt="Rectangle"  height="auto" />
-                       <img class="front-img"
-                        src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/7a8ac469-2dbb-466a-a3ac-c273ba55311b.png"
-                        alt="Woman Smiling"  height="auto">
+                        <iframe class="front-img" width="560" height="315" src="https://www.youtube.com/embed/CZLIAQ3WU_s?si=VaqpYQX6yqfRaYJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      
                     </div>
                     <div class="mt-3 info-text">
                       <h5 class="mt-3">The right school makes all the difference </h5>
@@ -494,17 +538,15 @@ ENDIF
                       <li>Right now, more than 200,000 students in every U.S. state are earning their degrees at SNHU</li>
                       <li>Whether you’ve tried school before or this is your first time, we’re going to be with you every step</li>
                     </ul>
-                    <div class="mb-3">Questions? Call
+                    <div class="mb-3 call-text">Questions? Call
                       <br>
-                      <a href="tel:8883870864" class="btn btn-default mt-3">Admission 888.387.0864</a>
+                      <a href="tel:8883870864" class="btn btn-default mt-3" target="_blank">Admission 888.387.0864</a>
                     </div>
                     </div>
                   </div>
 
                 </div>
               </div>
-               
-
               <!---Accordion End-->
             </div>
   </div>

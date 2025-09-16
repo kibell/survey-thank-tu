@@ -251,6 +251,11 @@ body {
   letter-spacing: 0%;
 }
 
+.survey-accordion .accordion-item {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .survey-accordion .accordion-button {
   background-color: transparent;
   border: none !important;
@@ -266,13 +271,12 @@ img.front-img {
   box-shadow: 4px 9px 15px rgba(0, 0, 0, 0.55);
 }
 
-.vidyard-player-container-survey {
+iframe.front-img, .vidyard-player-container-survey {
   position: absolute;
-  top: 6rem;
-  left: 2rem;
-  width: 90%;
-  height: 16rem;
-  border-radius: 2rem 2rem 3rem 0rem;
+  top: 3rem;
+  left: 3rem;
+  width: 65%;
+  border-radius: 0rem 2rem 2rem 1rem;
   box-shadow: 4px 9px 15px rgba(0, 0, 0, 0.55);
 }
 
@@ -355,4 +359,56 @@ img.front-img {
   color: #fff;
 }
 
-/* Abby styles *//*# sourceMappingURL=style.css.map */
+.hero-section {
+  padding-top: 3rem;
+}
+
+.video-resource-section {
+  padding: 6rem 0;
+}
+
+/* Abby styles */
+@media only screen and (max-width: 992px) {
+  .hero-section {
+    height: auto !important;
+    padding-bottom: 5rem !important;
+    padding-top: 0;
+  }
+  .hero-section .welcome-img {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 0 0 0 0 !important;
+    box-shadow: none !important;
+  }
+  .video-resource-section {
+    padding: 0;
+  }
+  .abby-container {
+    flex-direction: column;
+  }
+  .img-container {
+    height: 17rem !important;
+  }
+  .video-container {
+    height: 23rem !important;
+  }
+  .info-text {
+    max-width: 100% !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem;
+    text-align: center !important;
+  }
+  .need-text, .call-text {
+    text-align: center;
+  }
+  .vidyard-player-container-survey {
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    border-radius: 2rem;
+  }
+  .accordion-button {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
