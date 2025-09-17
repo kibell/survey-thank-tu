@@ -275,7 +275,8 @@ iframe.front-img, .vidyard-player-container-survey {
   position: absolute;
   top: 3rem;
   left: 3rem;
-  width: 65%;
+  width: 68%;
+  height: 12rem;
   border-radius: 0rem 2rem 2rem 1rem;
   box-shadow: 4px 9px 15px rgba(0, 0, 0, 0.55);
 }
@@ -367,7 +368,24 @@ iframe.front-img, .vidyard-player-container-survey {
   padding: 6rem 0;
 }
 
-/* Abby styles */
+.card-text {
+  font-size: 1.2rem;
+}
+
+.card {
+  max-width: 25%;
+  min-height: 5rem;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-top-img {
+  min-height: 12rem;
+}
+
+.card-body {
+  border-radius: 20px 20px 0 0;
+}
+
 @media only screen and (max-width: 992px) {
   .hero-section {
     height: auto !important;
@@ -410,5 +428,15 @@ iframe.front-img, .vidyard-player-container-survey {
   }
   .accordion-button {
     font-size: 20px;
+  }
+  .card-text {
+    font-size: 1.2rem;
+  }
+  .card {
+    max-width: 100%;
+    min-height: 5rem;
+  }
+  .card-top-img {
+    min-height: 12rem;
   }
 }/*# sourceMappingURL=style.css.map */
