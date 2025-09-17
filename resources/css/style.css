@@ -243,7 +243,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.accordion-button {
+.survey-accordion .accordion-button {
   font-family: Inter;
   font-weight: 700;
   font-style: Bold;
